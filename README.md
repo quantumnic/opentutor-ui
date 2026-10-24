@@ -39,7 +39,7 @@ Open [http://localhost:3000](http://localhost:3000)
 - **Tailwind CSS** for styling
 - **Framer Motion** for animations
 - **Lucide React** for icons
-- **better-sqlite3** for direct DB access
+- **sql.js** (WASM SQLite) for DB access
 - **TypeScript** throughout
 
 ## 🗄️ Database
@@ -51,6 +51,8 @@ The app reads opentutor's SQLite database directly:
 3. **No DB?** Demo data is shown automatically
 
 No backend server needed — the Next.js API routes query SQLite directly.
+
+> **Status:** the SQLite read path is experimental and does not yet match opentutor's current schema, so the UI currently shows the built-in demo data.
 
 ## 📁 Structure
 
